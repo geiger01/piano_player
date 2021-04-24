@@ -30,6 +30,8 @@ keys.forEach(key => {
     key.addEventListener("mousedown", () => playNote(key));
     // key.addEventListener("click", () => playNote(key));
     key.addEventListener("mouseup", () => pauseNote(key));
+    key.addEventListener("touchstart", () => playNote(key));//for mobile experience
+    key.addEventListener("touchend", () => pauseNote(key));
 
 })
 
